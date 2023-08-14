@@ -1,24 +1,20 @@
-# hellovue
+# Step 1 
+Download the file 
 
-## Project setup
-```
-npm install
-```
+# Step 2 
+make a directory name mysql in root folder
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Step 3 
+Run the command 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+composer install
+ 
+# Step 4 
+Run the followinf command 
 
-### Lints and fixes files
-```
-npm run lint
-```
+a . sudo chmod o+w ./storage/ -R
+b . docker-compose exec php php /var/www/html/artisan migrate
+c . docker-compose exec php php /var/www/html/artisan key:generate
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Now you go to the browser and access the laravel app localhost:8088
+
